@@ -2,6 +2,8 @@ package com.home.assignment.test;
 
 import com.home.assignment.model.*;
 
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
         Zoo zoo = new Zoo("Nehru Zoological garden");
@@ -14,6 +16,30 @@ public class Test {
         Dog dog3 = new Dog("Dog three", "pedigree", zoo, "Racing dog");
         Chicken chicken2 = new Chicken("Chicken two", "Corn", zoo, 0.75f, false);
 
+        Scanner sc = new Scanner(System.in);
 
+        while(true) {
+            System.out.println("-----Menu-----");
+            System.out.println("1) List Animals");
+            System.out.println("2) Live one day");
+            System.out.println("3) Quit");
+
+            System.out.println("Enter any option: ");
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    zoo.listAllAnimals();
+                    break;
+                case 2:
+                    zoo.liveOneDay();
+                    break;
+                case 3:
+                    return;
+                default:
+                    System.out.println("Invalid choice, please try again");
+
+            }
+        }
     }
 }

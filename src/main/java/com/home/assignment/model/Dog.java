@@ -15,4 +15,11 @@ public class Dog extends Animal {
     public void setDogType(String dogType) {
         this.dogType = dogType;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Dog{" +
+                "dogType='" + dogType + '\'' +
+                '}';
+    }
 }

@@ -16,4 +16,11 @@ public class Chicken extends Bird {
     public void setBroiler(boolean broiler) {
         isBroiler = broiler;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Chicken{" +
+                "isBroiler=" + isBroiler +
+                '}';
+    }
 }

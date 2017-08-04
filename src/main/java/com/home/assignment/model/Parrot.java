@@ -7,4 +7,11 @@ public class Parrot extends Bird {
         super(name, favoriteFood, zoo, wingSpan);
         this.canSpeak = canSpeak;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Parrot{" +
+                "canSpeak=" + canSpeak +
+                '}';
+    }
 }

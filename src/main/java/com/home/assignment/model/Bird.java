@@ -15,4 +15,13 @@ public class Bird extends Animal {
     public void setWingSpan(float wingSpan) {
         this.wingSpan = wingSpan;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Bird{" +
+                "wingSpan=" + wingSpan +
+                '}';
+    }
+
+
 }
